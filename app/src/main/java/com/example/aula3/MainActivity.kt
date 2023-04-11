@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Anna")
+                    cabecalho("Anna Clara MOta Pedrosa Da Silva","Chef" )
                 }
             }
         }
@@ -30,14 +30,14 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(Anna: String) {
-    Text(text = "Hello $Anna!")
+fun cabecalho(nomeCompleto: String, cargo: String) {
+    Text(text = "Hello $nomeCompleto!")
 }
 
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     Aula3Theme {
-        Greeting("Anna")
+        cabecalho("Anna","Chef")
     }
 }
